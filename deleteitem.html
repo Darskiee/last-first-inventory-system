@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Item</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="dashboard.html">HOME</a>
+        <a href="additem.html">ADD ITEM</a>
+        <a href="edititem.html">EDIT ITEM</a>
+        <a href="deleteitem.html">DELETE ITEM</a>
+    </div>
+    <div class="confirmation-box">
+        <h2>Delete Item</h2>
+        <p>Are you sure you want to delete this item?</p>
+        <div class="btn-container">
+            <form action="dashboard.html" method="post">
+                <input type="hidden" name="item_id" value="123">
+                <!-- Replace "123" with the actual ID of the item to be deleted -->
+                <button type="submit" class="confirm">Delete</button>
+            </form>
+            <button onclick="cancelDelete()" class="cancel">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        function cancelDelete() {
+            // Redirect or handle cancellation as needed
+            window.location.href = "items-list.php";
+        }
+    </script>
+</body>
+</html>

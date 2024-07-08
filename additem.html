@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item Form</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="dashboard.html">HOME</a>
+        <a href="additem.html">ADD ITEM</a>
+        <a href="edititem.html">EDIT ITEM</a>
+        <a href="deleteitem.html">DELETE ITEM</a>
+    </div>
+    <div class="form-container">
+        <h2>Add New Item</h2>
+        <form action="dashboard.html" method="post">
+            <label for="item_name">Item Name:</label>
+            <input type="text" id="item_name" name="item_name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required>
+
+            <input type="submit" value="Add Item">
+        </form>
+    </div>
+</body>
+</html>

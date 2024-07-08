@@ -1,0 +1,185 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* White smoke */
+}
+
+/* Container for login form */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #ffccd5; /* Light pink */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff8b94; /* Medium pink */
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 10px;
+    color: #ff8b94; /* Medium pink */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff8b94; /* Medium pink */
+    border-radius: 3px;
+}
+
+.login-container input[type="submit"] {
+    background-color: #ff4b5c; /* Bright pink */
+    color: white;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #ff6b7d; /* Slightly lighter bright pink */
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #ff4b5c; /* Bright pink */
+    color: #fff;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffd1dc; /* Very light pink */
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #ffe6e6; /* Very light pink */
+}
+
+/* Main content area */
+.content {
+    margin-left: 220px; /* Adjust to accommodate sidebar width + padding */
+    padding: 20px;
+}
+
+/* Form container styles */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff8b94; /* Medium pink */
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+    color: #ff8b94; /* Medium pink */
+}
+
+.form-container input[type="text"],
+.form-container textarea,
+.form-container input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff8b94; /* Medium pink */
+    border-radius: 3px;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+.form-container input[type="submit"] {
+    background-color: #ff4b5c; /* Bright pink */
+    color: white;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #ff6b7d; /* Slightly lighter bright pink */
+}
+
+/* Confirmation box styles */
+.confirmation-box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #f5f5f5; /* White smoke */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.confirmation-box h2 {
+    margin-bottom: 20px;
+    color: #ff8b94; /* Medium pink */
+}
+
+.confirmation-box p {
+    margin-bottom: 20px;
+    color: #ff8b94; /* Medium pink */
+}
+
+.confirmation-box .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.confirmation-box .btn-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.confirmation-box .btn-container .confirm {
+    background-color: #ff4b5c; /* Bright pink */
+    color: white;
+}
+
+.confirmation-box .btn-container .confirm:hover {
+    background-color: #ff6b7d; /* Slightly lighter bright pink */
+}
+
+.confirmation-box .btn-container .cancel {
+    background-color: #ffccd5; /* Light pink */
+    color: #ff4b5c; /* Bright pink */
+}
+
+.confirmation-box .btn-container .cancel:hover {
+    background-color: #ffd1dc; /* Very light pink */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="dashboard.html">HOME</a>
+        <a href="additem.html">ADD ITEM</a>
+        <a href="edititem.html">EDIT ITEM</a>
+        <a href="deleteitem.html">DELETE ITEM</a>
+    </div>
+    <div class="form-container">
+        <h2>Edit Item</h2>
+        <form action="dashboard.html" method="post">
+            <input type="hidden" id="item_id" name="item_id" value="123">
+            <!-- Replace "123" with the actual ID of the item being edited -->
+
+            <label for="item_name">Item Name:</label>
+            <input type="text" id="item_name" name="item_name" value="Item Name" required>
+            <!-- Replace "Item Name" with the actual name of the item -->
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required>Description of the item</textarea>
+            <!-- Replace "Description of the item" with the actual description of the item -->
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" value="100" required>
+            <!-- Replace "100" with the actual price of the item -->
+
+            <input type="submit" value="Update Item">
+        </form>
+    </div>
+</body>
+</html>
